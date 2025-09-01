@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View, Image } from 'react-native';
 import { Button, View } from "react-native";
 
@@ -7,6 +7,7 @@ const CustomButton = ({ title, onPress, icon }) => {
     <TouchableOpacity style={styles.button} onPress={onPress}>
       {icon && <Image source={icon} style={styles.icon} />}
       <Text style={styles.text}>{title}</Text>
+      <Button style={styles.button}>Test</Button>
     </TouchableOpacity>
   );
 };
